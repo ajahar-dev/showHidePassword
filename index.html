@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide-Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="box">
+                <input type="password" id="password" placeholder="Enter password" required maxlength="8"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{1,8}$"
+                    title="Password must contain letters, numbers, and symbols (max 8 characters)">
+                <img src="images/close-eye.png" id="hide" width="15px" height="20px">
+                <img src="images/view.png" id="show" width="15px" height="20px" style="display: none">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
